@@ -29,7 +29,8 @@ def crack_passwords(hash_path, wordlist_path, hash_type = "md5"):
     for option in target:
         if option not in return_dict:
             return_dict.update({option: "Failed"})
-
+    
+    print(return_dict)
     return return_dict
 
 def type(phrase, newline):
